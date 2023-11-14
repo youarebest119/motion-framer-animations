@@ -33,7 +33,7 @@ const ScrollTextWithScrolling = () => {
                     }}
                 >
                     <h1>Welcome to the city of bridges, where connections flow freely.</h1>
-                    <h1 className={styles.copy_text}>Welcome to the city of bridges, where connections flow freely.</h1>
+                    {/* <h1 className={styles.copy_text}>Welcome to the city of bridges, where connections flow freely.</h1> */}
                 </motion.div>
             </section>
             <LoremText />

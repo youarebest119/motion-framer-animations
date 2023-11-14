@@ -10,6 +10,8 @@ import FramerModal from './components/pages/FramerModal/FramerModal';
 import ScrollProgress from './components/pages/ScrollProgress/ScrollProgress';
 import MakeProgressWhenInView from './components/pages/MakeProgressWhenInView/MakeProgressWhenInView';
 import ScrollTextWithScrolling from './components/pages/ScrollTextWithScrolling/ScrollTextWithScrolling';
+import RevealTextonView from './components/pages/RevealTextonView/RevealTextonView';
+import WelcomePage from './components/pages/WelcomePage/WelcomePage';
 
 const Application = () => {
     const router = createBrowserRouter([
@@ -37,6 +39,10 @@ const Application = () => {
                     path: ROUTES.MAKE_PROGRESS_WHEN_IN_VIEW,
                     element: <MakeProgressWhenInView />,
                 },
+                {
+                    path: ROUTES.REVEAL_TEXT_ON_VIEW,
+                    element: <RevealTextonView />,
+                },
             ],
         },
         {
@@ -50,6 +56,10 @@ const Application = () => {
         {
             path: ROUTES.SCROLL_TEXT_WITH_SCROLLING,
             element: <ScrollTextWithScrolling />,
+        },
+        {
+            path: ROUTES.WELCOME_PAGE,
+            element: <WelcomePage />,
         },
     ]);
     return (

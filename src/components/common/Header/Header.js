@@ -21,6 +21,8 @@ const Header = () => {
                             <NavLink to={ROUTES.SCROLL_PROGRESS}>Scroll Progress</NavLink>
                             <NavLink to={ROUTES.MAKE_PROGRESS_WHEN_IN_VIEW}>Progress in View</NavLink>
                             <NavLink to={ROUTES.SCROLL_TEXT_WITH_SCROLLING}>Scroll Text with Scrolling</NavLink>
+                            <NavLink to={ROUTES.REVEAL_TEXT_ON_VIEW}>Reveal Text on View</NavLink>
+                            <NavLink to={ROUTES.WELCOME_PAGE}>Welcome Page</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

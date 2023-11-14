@@ -2,8 +2,9 @@
 
 body {
 	margin: 0;
-	font-family: 'Satoshi',
-		sans-serif;
+	// font-family: 'Satoshi',
+	// 	sans-serif;
+	font-family: $basefont;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: $bg;
