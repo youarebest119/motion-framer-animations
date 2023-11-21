@@ -12,6 +12,8 @@ import MakeProgressWhenInView from './components/pages/MakeProgressWhenInView/Ma
 import ScrollTextWithScrolling from './components/pages/ScrollTextWithScrolling/ScrollTextWithScrolling';
 import RevealTextonView from './components/pages/RevealTextonView/RevealTextonView';
 import WelcomePage from './components/pages/WelcomePage/WelcomePage';
+import OnScrollZoom from './components/pages/OnScrollZoom/OnScrollZoom';
+import AnimatedButtons from './components/pages/AnimatedButtons/AnimatedButtons';
 
 const Application = () => {
     const router = createBrowserRouter([
@@ -43,6 +45,10 @@ const Application = () => {
                     path: ROUTES.REVEAL_TEXT_ON_VIEW,
                     element: <RevealTextonView />,
                 },
+                {
+                    path: ROUTES.ANIMATED_BUTTONS,
+                    element: <AnimatedButtons />,
+                },
             ],
         },
         {
@@ -60,6 +66,10 @@ const Application = () => {
         {
             path: ROUTES.WELCOME_PAGE,
             element: <WelcomePage />,
+        },
+        {
+            path: ROUTES.ONSCROLL_ZOOM,
+            element: <OnScrollZoom />,
         },
     ]);
     return (

@@ -23,6 +23,8 @@ const Header = () => {
                             <NavLink to={ROUTES.SCROLL_TEXT_WITH_SCROLLING}>Scroll Text with Scrolling</NavLink>
                             <NavLink to={ROUTES.REVEAL_TEXT_ON_VIEW}>Reveal Text on View</NavLink>
                             <NavLink to={ROUTES.WELCOME_PAGE}>Welcome Page</NavLink>
+                            <NavLink to={ROUTES.ONSCROLL_ZOOM}>On Scroll Zoom</NavLink>
+                            <NavLink to={ROUTES.ANIMATED_BUTTONS}>Animated Buttons</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -9,4 +9,6 @@ export const ROUTES = {
     SCROLL_TEXT_WITH_SCROLLING: "/scroll-text-with-scrolling",
     REVEAL_TEXT_ON_VIEW: "/reveal-text-on-view",
     WELCOME_PAGE: "/welcome-here",
+    ONSCROLL_ZOOM: "/on-scroll-zoom",
+    ANIMATED_BUTTONS: "/animated-buttons",
 }
