@@ -1,9 +1,27 @@
 import React from 'react'
+import styles from "./Home.module.scss";
+import { ROUTES } from '../../../utils/constants'
+import { NavLink } from 'react-router-dom'
+import { Container } from "react-bootstrap"
 
 const Home = () => {
     return (
-        <div>
-            Home
+        <div className={styles.home}>
+            <Container>
+                <ul>
+                    {
+                        Object.keys(ROUTES).map(item => {
+                            return (
+                                <li>
+                                    <NavLink to={`${ROUTES[item]}`}>
+                                        {ROUTES[item]}
+                                    </NavLink>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+            </Container>
         </div>
     )
 }

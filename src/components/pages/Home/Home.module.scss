@@ -1,0 +1,49 @@
+@import "../../../assets/theme/_var.scss";
+
+.home {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            width: 100%;
+            padding: 10px;
+
+            a {
+                height: 100%;
+                width: 100%;
+                display: block;
+                padding: 20px;
+                border: 2px solid $baseclr;
+                color: $baseclr;
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 600;
+                z-index: 1;
+                transition: 300ms ease-in-out;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    width: 0%;
+                    height: 100%;
+                    background-color: $baseclr;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    transition: 300ms ease-in-out;
+                    z-index: -1;
+                }
+
+                &:hover {
+                    color: white;
+
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

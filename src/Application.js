@@ -14,6 +14,9 @@ import RevealTextonView from './components/pages/RevealTextonView/RevealTextonVi
 import WelcomePage from './components/pages/WelcomePage/WelcomePage';
 import OnScrollZoom from './components/pages/OnScrollZoom/OnScrollZoom';
 import AnimatedButtons from './components/pages/AnimatedButtons/AnimatedButtons';
+import OpenListAnimation from './components/pages/OpenListAnimation/OpenListAnimation';
+import FramerMotionLearn from './components/pages/FramerMotionLearn/FramerMotionLearn';
+import AddRemoveElementAnimation from './components/pages/AddRemoveElementAnimation/AddRemoveElementAnimation';
 
 const Application = () => {
     const router = createBrowserRouter([
@@ -70,6 +73,18 @@ const Application = () => {
         {
             path: ROUTES.ONSCROLL_ZOOM,
             element: <OnScrollZoom />,
+        },
+        {
+            path: ROUTES.OPEN_LIST_ANIMATION,
+            element: <OpenListAnimation />,
+        },
+        {
+            path: ROUTES.FRAMER_MOTION,
+            element: <FramerMotionLearn />,
+        },
+        {
+            path: ROUTES.ADD_REMOVE_ELEMENT,
+            element: <AddRemoveElementAnimation />,
         },
     ]);
     return (

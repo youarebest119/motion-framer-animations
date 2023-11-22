@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import darkNight from "../../../assets/images/welcome-here/lights-night-city.jpg";
-import styles from "./WelcomePage.module.scss";
-import { motion, useSpring } from 'framer-motion';
-import numberIntoWords from './numberIntoWords';
+import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
-import useMousePosition from '../MaskCursor/useMousePosition';
+import styles from "./WelcomePage.module.scss";
+import numberIntoWords from './numberIntoWords';
 
 const phrases = [
     "The Petrol engine is 4951 cc",
@@ -15,7 +13,6 @@ const phrases = [
 
 const WelcomePage = () => {
     const [progress, setProgress] = useState(1);
-    const mousePosition = useMousePosition();
 
     useEffect(() => {
         document.body.style.overflow = "hidden";

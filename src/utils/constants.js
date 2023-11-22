@@ -11,4 +11,7 @@ export const ROUTES = {
     WELCOME_PAGE: "/welcome-here",
     ONSCROLL_ZOOM: "/on-scroll-zoom",
     ANIMATED_BUTTONS: "/animated-buttons",
+    OPEN_LIST_ANIMATION: "/open-list-animation",
+    FRAMER_MOTION: "/framer-motion",
+    ADD_REMOVE_ELEMENT: "/add-remove-element",
 }

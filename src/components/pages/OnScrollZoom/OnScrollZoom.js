@@ -1,17 +1,11 @@
-import { scroll, useInView, useMotionValue, useMotionValueEvent, useScroll } from 'framer-motion';
-import gsap from "gsap";
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import { Scene, Controller } from 'react-scrollmagic';
-import React, { useEffect, useRef, useState } from 'react';
-import { motion } from "framer-motion";
+import { motion, scroll, useMotionValue } from 'framer-motion';
+import React from 'react';
 import dummyImg from "../../../assets/images/on-scroll-zoom/background.jpg";
-import LoremText from '../LoremText/LoremText';
-import { Tween, Timeline } from 'react-gsap';
 import car from "../../../assets/images/on-scroll-zoom/car.png";
+import LoremText from '../LoremText/LoremText';
 import styles from "./OnScrollZoom.module.scss";
 
 const OnScrollZoom = () => {
-    const ref = useRef(null);
     const value = useMotionValue(0);
     scroll(progress => value.set(progress));
     // useEffect(() => {

@@ -22,7 +22,7 @@ const RevealTextonViewText = () => {
                                     transition: {
                                         type: "bounce",
                                         duration: 0.5,
-                                        delay: index * 0.1,
+                                        delay: index * 0.15,
                                     }
                                 }}
                             >
