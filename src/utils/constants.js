@@ -14,4 +14,7 @@ export const ROUTES = {
     OPEN_LIST_ANIMATION: "/open-list-animation",
     FRAMER_MOTION: "/framer-motion",
     ADD_REMOVE_ELEMENT: "/add-remove-element",
+    ANIMATED_TABLE: "/animated-table",
+    ANIMATED_ROADMAP: "/roadmap-to-nothing",
+    ANIMATE_RADIAL_GRADIENT: "/animate-radial-gradient",
 }

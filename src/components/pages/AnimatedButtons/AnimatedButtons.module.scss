@@ -5,6 +5,9 @@
 
     ul {
         margin: -30px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
 
         li {
             padding: 30px;
