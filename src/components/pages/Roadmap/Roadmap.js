@@ -1,29 +1,33 @@
-import { motion, useScroll } from "framer-motion";
-import React, { useRef } from 'react';
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import React, { useRef, useState } from 'react';
 import { Container } from "react-bootstrap";
-import LoremText from '../LoremText/LoremText';
-import styles from "./Roadmap.module.scss";
+import "./Roadmap.scss";
 import RoadmapBox from './RoadmapBox/RoadmapBox';
+import LoremText from "../LoremText/LoremText";
 
 const Roadmap = () => {
     const ref = useRef();
+    const roadmapRef = useRef();
+    const [jst, setJst] = useState(0);
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: ["90vh end", "end end"],
-        smooth: 10
+        offset: ["-50vh", "50vh start"],
     });
-
+    useMotionValueEvent(scrollYProgress, "change", (LinelatestValue) => {
+        setJst(LinelatestValue);
+    })
     return (
-        <section className={styles.roadmap_sec}>
+        <section className={"roadmap_sec"}>
             <LoremText />
             <Container>
                 <h2>The Roadmap</h2>
                 <div
-                    className={styles.roadmap}
-                    ref={ref}
+                    className={"roadmap"}
+                    ref={roadmapRef}
                 >
                     <div
-                        className={styles.line}
+                        className={"line"}
+                        ref={ref}
                     >
                         <motion.span
                             style={{
@@ -37,39 +41,32 @@ const Roadmap = () => {
                     </div>
                     <div>
                         <RoadmapBox
+                            roadmapRef={roadmapRef}
+                            jst={jst}
                             title="March 2015-2017"
                             text="lorem ipsum, or lipsum as it is sometimes"
                             variant="start"
                         />
                         <RoadmapBox
+                            roadmapRef={roadmapRef}
+                            jst={jst}
                             title="March 2017 - 2023"
                             text="lorem ipsum, or lipsum as it is sometimes"
                             variant="end"
                         />
                         <RoadmapBox
+                            roadmapRef={roadmapRef}
+                            jst={jst}
                             title="04 2018"
                             text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed"
                             variant="start"
                         />
                         <RoadmapBox
+                            roadmapRef={roadmapRef}
+                            jst={jst}
                             title="March 2017 - 2023"
                             text="lorem ipsum, or lipsum as it is sometimes"
                             variant="end"
-                        />
-                        <RoadmapBox
-                            title="March 2023-2027"
-                            text="lorem ipsum, or lipsum as it is sometimes"
-                            variant="start"
-                        />
-                        <RoadmapBox
-                            title="March 2027-2028"
-                            text="lorem ipsum, or lipsum as it is sometimes"
-                            variant="end"
-                        />
-                        <RoadmapBox
-                            title="March 2028-2030"
-                            text="lorem ipsum, or lipsum as it is sometimes"
-                            variant="start"
                         />
                     </div>
                 </div>
