@@ -1,0 +1,14 @@
+@import "../../../../assets/theme/_var.scss";
+
+.text_animate {
+    color: inherit;
+
+    >div {
+        color: inherit;
+        display: inline-block;
+
+        span {
+            color: inherit;
+        }
+    }
+}

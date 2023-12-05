@@ -19,6 +19,9 @@ import ScrollTextWithScrolling from './components/pages/ScrollTextWithScrolling/
 import SplitVigletta from './components/pages/SplitVigletta/SplitVigletta';
 import WelcomePage from './components/pages/WelcomePage/WelcomePage';
 import { ROUTES } from './utils/constants';
+import Magnetic from './components/pages/Magnetic/Magnetic';
+import TextAnimation from './components/pages/TextAnimations/FadeUpText/FadeUpText';
+import TextAnimations from './components/pages/TextAnimations/TextAnimations';
 
 const Application = () => {
     const router = createBrowserRouter([
@@ -95,6 +98,14 @@ const Application = () => {
         {
             path: ROUTES.ANIMATED_ROADMAP,
             element: <Roadmap />,
+        },
+        {
+            path: ROUTES.MAGNETIC,
+            element: <Magnetic />,
+        },
+        {
+            path: ROUTES.TEXTANIMATION,
+            element: <TextAnimations />,
         },
     ]);
     return (

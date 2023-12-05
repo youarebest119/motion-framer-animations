@@ -16,4 +16,6 @@ export const ROUTES = {
     ADD_REMOVE_ELEMENT: "/add-remove-element",
     ANIMATED_TABLE: "/animated-table",
     ANIMATED_ROADMAP: "/roadmap-to-nothing",
+    MAGNETIC: "/magnetic",
+    TEXTANIMATION: "/text-animation",
 }
