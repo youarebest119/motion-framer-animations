@@ -28,6 +28,7 @@ const Roadmap = () => {
                     <div
                         className={"line"}
                         ref={ref}
+                        data-active={scrollYProgress.get() === 1}
                     >
                         <motion.span
                             style={{

@@ -22,6 +22,7 @@ import { ROUTES } from './utils/constants';
 import Magnetic from './components/pages/Magnetic/Magnetic';
 import TextAnimation from './components/pages/TextAnimations/FadeUpText/FadeUpText';
 import TextAnimations from './components/pages/TextAnimations/TextAnimations';
+import TeamSectionSlider from './components/pages/TeamSectionSlider/TeamSectionSlider';
 
 const Application = () => {
     const router = createBrowserRouter([
@@ -106,6 +107,10 @@ const Application = () => {
         {
             path: ROUTES.TEXTANIMATION,
             element: <TextAnimations />,
+        },
+        {
+            path: ROUTES.TEAM_SECTION_SLIDER,
+            element: <TeamSectionSlider />,
         },
     ]);
     return (

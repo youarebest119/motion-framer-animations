@@ -1,12 +1,15 @@
-import React from 'react'
+import { motion, useScroll, useMotionValueEvent, useTransform } from "framer-motion"
+import React, { useRef } from 'react'
 import FadeUpText from './FadeUpText/FadeUpText'
-import LoremText from '../LoremText/LoremText'
+import LoremText from "../LoremText/LoremText";
+
 
 const TextAnimations = () => {
     return (
         <>
             <section>
-                <LoremText />
+                <div className="vh-100"></div>
+                <div className="vh-100"></div>
                 <h3>
                     <FadeUpText>
                         This Text have fading up animation

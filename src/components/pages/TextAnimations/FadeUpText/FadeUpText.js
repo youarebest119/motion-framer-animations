@@ -12,7 +12,7 @@ const FadeUpText = (props) => {
             x: "0",
             opacity: 1,
             transition: {
-                delay: custom * 0.008,
+                delay: custom * 0.08,
                 duration: 0.4,
                 type: "spring",
                 stiffness: 140

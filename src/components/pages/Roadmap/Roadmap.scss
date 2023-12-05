@@ -46,6 +46,12 @@
                 position: absolute;
                 bottom: 0;
             }
+
+            &[data-active="true"] {
+                &::after {
+                    background-color: #FEB84D;
+                }
+            }
         }
     }
 }
