@@ -1,21 +1,21 @@
-import { motion, useScroll, useMotionValueEvent, useTransform } from "framer-motion"
-import React, { useRef } from 'react'
-import FadeUpText from './FadeUpText/FadeUpText'
-import LoremText from "../LoremText/LoremText";
-
+import React from 'react';
+import OnScrollRotate3dText from './OnScrollRotate3dText/OnScrollRotate3dText';
+import FadeUpText from './FadeUpText/FadeUpText';
+import TextScrollWithScroller from "./TextScrollWithScroller/TextScrollWithScroller"
 
 const TextAnimations = () => {
     return (
         <>
             <section>
-                <div className="vh-100"></div>
-                <div className="vh-100"></div>
                 <h3>
                     <FadeUpText>
                         This Text have fading up animation
                     </FadeUpText>
                 </h3>
             </section>
+            <TextScrollWithScroller />
+            <div style={{ height: '150vh', }} />
+            <OnScrollRotate3dText />
         </>
     )
 }

@@ -39,16 +39,22 @@ const AnimatedTable = () => {
             <Container>
                 <Table responsive>
                     <thead>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Tagline</th>
-                        <th>Description</th>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Tagline</th>
+                            <th>Description</th>
+                        </tr>
                     </thead>
                     <tbody>
                         {
                             loading ?
                                 <>
-                                    loading....
+                                    <tr>
+                                        <td colSpan={4}>
+                                            loading....
+                                        </td>
+                                    </tr>
                                 </>
                                 :
                                 data.length > 0 ?

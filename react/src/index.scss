@@ -64,3 +64,7 @@ html.lenis {
 .lenis.lenis-scrolling iframe {
 	pointer-events: none;
 }
+
+::-webkit-scrollbar {
+	display: none;
+}

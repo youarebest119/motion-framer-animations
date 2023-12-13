@@ -12,7 +12,7 @@ const Home = () => {
                     {
                         Object.keys(ROUTES).map(item => {
                             return (
-                                <li>
+                                <li key={item}>
                                     <NavLink to={`${ROUTES[item]}`}>
                                         {ROUTES[item]}
                                     </NavLink>

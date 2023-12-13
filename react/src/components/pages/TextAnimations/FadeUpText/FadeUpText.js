@@ -39,7 +39,8 @@ const FadeUpText = (props) => {
                                 >{letter}</motion.span>
                             )
                         }&nbsp;
-                    </motion.div>)
+                    </motion.div>
+                    )
                 }
             </div>
         </>

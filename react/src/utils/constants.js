@@ -18,5 +18,6 @@ export const ROUTES = {
     ANIMATED_ROADMAP: "/roadmap-to-nothing",
     MAGNETIC: "/magnetic",
     TEXTANIMATION: "/text-animation",
-    TEAM_SECTION_SLIDER: "/team-slider"
+    TEAM_SECTION_SLIDER: "/team-slider",
+    BANNER_TEXT_ANIMATION: "/banner-text-animation",
 }
