@@ -23,6 +23,9 @@ import TeamSectionSlider from './components/pages/TeamSectionSlider/TeamSectionS
 import TextAnimations from './components/pages/TextAnimations/TextAnimations';
 import WelcomePage from './components/pages/WelcomePage/WelcomePage';
 import { ROUTES } from './utils/constants';
+import { AnimatePresence } from "framer-motion";
+import { useLocation, useRoutes } from "react-router-dom";
+import AnimatedTabs from './components/pages/AnimatedTabs/AnimatedTabs';
 
 const Application = () => {
     const router = createBrowserRouter([
@@ -114,12 +117,19 @@ const Application = () => {
                     path: ROUTES.BANNER_TEXT_ANIMATION,
                     element: <BannerTextAnimation />
                 },
+                {
+                    path: ROUTES.ANIMATED_TABS,
+                    element: <AnimatedTabs />
+                },
             ],
         },
     ]);
+
     return (
         <>
-            <RouterProvider router={router} />
+            <AnimatePresence mode="wait" initial={false}>
+                <RouterProvider router={router} />
+            </AnimatePresence>
         </>
     )
 }

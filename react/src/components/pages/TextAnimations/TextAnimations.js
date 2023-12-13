@@ -2,6 +2,7 @@ import React from 'react';
 import OnScrollRotate3dText from './OnScrollRotate3dText/OnScrollRotate3dText';
 import FadeUpText from './FadeUpText/FadeUpText';
 import TextScrollWithScroller from "./TextScrollWithScroller/TextScrollWithScroller"
+import AnimatedNumbers from './AnimatedNumbers/AnimatedNumbers';
 
 const TextAnimations = () => {
     return (
@@ -16,6 +17,7 @@ const TextAnimations = () => {
             <TextScrollWithScroller />
             <div style={{ height: '150vh', }} />
             <OnScrollRotate3dText />
+            <AnimatedNumbers />
         </>
     )
 }
