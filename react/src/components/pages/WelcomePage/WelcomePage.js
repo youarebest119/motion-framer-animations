@@ -57,7 +57,6 @@ const WelcomePage = () => {
                 <h2>
                     {Math.round(progress)}%
                 </h2>
-                <h3>{numberIntoWords(Math.round(progress))} percentage</h3>
             </motion.div>
             <div className={styles.main_content}>
                 <Container>

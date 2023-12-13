@@ -20,4 +20,6 @@ export const ROUTES = {
     TEXTANIMATION: "/text-animation",
     TEAM_SECTION_SLIDER: "/team-slider",
     COUNTER_ANIMATION: "/counter-animation",
+    BANNER_TEXT_ANIMATION: "/banner-text-animation",
+    ANIMATED_TABS: "/animated-tabs"
 }

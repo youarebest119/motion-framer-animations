@@ -23,9 +23,13 @@ const AnimatedTable = () => {
 
     const getData = useCallback(async () => {
         setLoading(true);
-        let response = await axios.get(`${process.env.REACT_APP_API_URL}?page=${page}&per_page=${process.env.REACT_APP_RESPONSE_PER_PAGE}`);
-        setLoading(false);
-        setData(response.data)
+        try {
+            let response = await axios.get(`${process.env.REACT_APP_API_URL}?page=${page}&per_page=${process.env.REACT_APP_RESPONSE_PER_PAGE}`);
+            setData(response.data)
+            setLoading(false);
+        } catch (error) {
+            setLoading(false);
+        }
     }, [page])
 
 
@@ -39,16 +43,22 @@ const AnimatedTable = () => {
             <Container>
                 <Table responsive>
                     <thead>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Tagline</th>
-                        <th>Description</th>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Tagline</th>
+                            <th>Description</th>
+                        </tr>
                     </thead>
                     <tbody>
                         {
                             loading ?
                                 <>
-                                    loading....
+                                    <tr>
+                                        <td colSpan={4}>
+                                            loading....
+                                        </td>
+                                    </tr>
                                 </>
                                 :
                                 data.length > 0 ?
