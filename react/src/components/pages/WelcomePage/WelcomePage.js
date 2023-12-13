@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import styles from "./WelcomePage.module.scss";
-import numberIntoWords from './numberIntoWords';
 
 const phrases = [
     "The Petrol engine is 4951 cc",

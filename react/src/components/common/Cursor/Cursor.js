@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
-import { motion, useMotionValue, useMotionValueEvent, useSpring } from "framer-motion";
-import styles from "./Cursor.module.scss"
+import { motion, useMotionValue, useSpring } from "framer-motion";
+import React, { useEffect } from 'react';
+import styles from "./Cursor.module.scss";
 // import useMousePosition from './useMousePosition';
 
 const Cursor = () => {
@@ -16,7 +16,7 @@ const Cursor = () => {
         return () => {
             window.onmousemove = null;
         };
-    }, []);
+    }, [mousePosition.x, mousePosition.y]);
     const springX = useSpring(mousePosition.x);
     const springY = useSpring(mousePosition.y);
     return (

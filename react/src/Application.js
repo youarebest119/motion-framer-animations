@@ -1,10 +1,13 @@
+import { AnimatePresence } from "framer-motion";
 import React from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import HomeLayout from './components/layouts/HomeLayout/HomeLayout';
 import AddRemoveElementAnimation from './components/pages/AddRemoveElementAnimation/AddRemoveElementAnimation';
 import AnimatedButtons from './components/pages/AnimatedButtons/AnimatedButtons';
 import AnimatedTable from './components/pages/AnimatedTable/AnimatedTable';
+import AnimatedTabs from './components/pages/AnimatedTabs/AnimatedTabs';
 import BannerTextAnimation from './components/pages/BannerTextAnimation/BannerTextAnimation';
+import CounterAnimation from './components/pages/CounterAnimation/CounterAnimation';
 import FramerModal from './components/pages/FramerModal/FramerModal';
 import FramerMotionLearn from './components/pages/FramerMotionLearn/FramerMotionLearn';
 import Home from './components/pages/Home/Home';
@@ -23,14 +26,6 @@ import TeamSectionSlider from './components/pages/TeamSectionSlider/TeamSectionS
 import TextAnimations from './components/pages/TextAnimations/TextAnimations';
 import WelcomePage from './components/pages/WelcomePage/WelcomePage';
 import { ROUTES } from './utils/constants';
-import Magnetic from './components/pages/Magnetic/Magnetic';
-import TextAnimation from './components/pages/TextAnimations/FadeUpText/FadeUpText';
-import TextAnimations from './components/pages/TextAnimations/TextAnimations';
-import TeamSectionSlider from './components/pages/TeamSectionSlider/TeamSectionSlider';
-import CounterAnimation from './components/pages/CounterAnimation/CounterAnimation';
-import { AnimatePresence } from "framer-motion";
-import { useLocation, useRoutes } from "react-router-dom";
-import AnimatedTabs from './components/pages/AnimatedTabs/AnimatedTabs';
 
 const Application = () => {
     const router = createBrowserRouter([

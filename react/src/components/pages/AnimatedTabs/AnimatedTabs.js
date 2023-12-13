@@ -39,11 +39,11 @@ const AnimatedTabs = () => {
                                     <li key={item.key}>
                                         <button
                                             onClick={() => setActive(item)}
-                                            className={`${JSON.stringify(item) == JSON.stringify(active) ? styles.active : ""}`}
+                                            className={`${JSON.stringify(item) === JSON.stringify(active) ? styles.active : ""}`}
                                         >
                                             {item.title} <span>{item.emoji}</span>
                                             {
-                                                JSON.stringify(item) == JSON.stringify(active) ?
+                                                JSON.stringify(item) === JSON.stringify(active) ?
                                                     <motion.span transition={{ layout: { type: "spring", bounce: 10, stiffness: 200 } }} layoutId='tabs' className={styles.border}></motion.span>
                                                     :
                                                     null

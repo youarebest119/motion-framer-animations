@@ -162,6 +162,9 @@ const TeamSectionSlider = () => {
                             </li>
                         ))
                     }
+                    <li>
+                        <h3>The End</h3>
+                    </li>
                 </motion.ul>
             </section>
             <LoremText />
