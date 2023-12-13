@@ -1,7 +1,5 @@
-import { motion, useScroll, useMotionValueEvent, useTransform } from "framer-motion"
-import React, { useRef } from 'react'
-import FadeUpText from './FadeUpText/FadeUpText'
-import LoremText from "../LoremText/LoremText";
+import React from 'react';
+import FadeUpText from './FadeUpText/FadeUpText';
 
 
 const TextAnimations = () => {

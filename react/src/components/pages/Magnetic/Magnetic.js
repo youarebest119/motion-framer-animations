@@ -1,6 +1,5 @@
-import React, { ReactNode, useRef, useState } from 'react';
-import styles from "./Magnetic.module.scss";
 import { motion } from "framer-motion";
+import React, { useRef, useState } from 'react';
 const Magnetic = ({ children }) => {
     const ref = useRef(null);
 
@@ -21,7 +20,6 @@ const Magnetic = ({ children }) => {
     const { x, y } = position;
 
     return (
-
         <motion.div
             style={{ position: "relative" }}
             ref={ref}
