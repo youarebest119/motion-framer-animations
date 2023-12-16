@@ -6,9 +6,13 @@
     >div {
         color: inherit;
         display: inline-block;
+        font-weight: inherit;
+        font-size: inherit;
 
         span {
             color: inherit;
+            font-weight: inherit;
+            font-size: inherit;
         }
     }
 }
