@@ -17,8 +17,12 @@ const Cursor = () => {
             window.onmousemove = null;
         };
     }, [mousePosition.x, mousePosition.y]);
-    const springX = useSpring(mousePosition.x);
-    const springY = useSpring(mousePosition.y);
+    const spring = {
+        stiffness: 250,
+        damping: 25,
+    }
+    const springX = useSpring(mousePosition.x, spring);
+    const springY = useSpring(mousePosition.y, spring);
     return (
         <>
 

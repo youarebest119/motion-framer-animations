@@ -49,44 +49,47 @@ const ImageReveal = () => {
             img: ziraffe,
         },
     ]
+
     return (
         <section className={styles.image_reveal} onMouseMove={handleMove}>
-            <>
-                <ul>
-                    {
-                        animals.map(item => (
-                            <li
-                                key={item.name}
+            <ul>
+                {
+                    animals.map(item => (
+                        <li
+                            key={item.name}
+                        >
+                            <div
+                                onMouseEnter={() => {
+                                    setRevealImage({
+                                        src: item.img,
+                                        alt: item.title,
+                                        opacity: 1,
+                                    });
+                                }}
+                                onMouseLeave={() => {
+                                    setRevealImage({
+                                        src: item.img,
+                                        alt: item.title,
+                                        opacity: 0,
+                                    })
+                                }}
                             >
-                                <div
-                                    onMouseEnter={() => {
-                                        setRevealImage({
-                                            src: item.img,
-                                            alt: item.title,
-                                            opacity: 1,
-                                        });
-                                    }}
-                                    onMouseLeave={() => {
-                                        setRevealImage({ src: "", alt: "", opacity: 0, })
-                                    }}
-                                >
-                                    {item.name}
-                                </div>
-                            </li>
-                        ))
-                    }
-                </ul>
-                <motion.img
-                    src={revealImage.src}
-                    className={`${styles.img} ${revealImage.src ? styles.active : ""}`}
-                    alt={revealImage.alt}
-                    style={{
-                        x: imagePos.x,
-                        y: imagePos.y,
-                        opacity: revealImage.opacity,
-                    }}
-                />
-            </>
+                                {item.name}
+                            </div>
+                        </li>
+                    ))
+                }
+            </ul>
+            <motion.img
+                src={revealImage.src}
+                className={`${styles.img} ${revealImage.src ? styles.active : ""}`}
+                alt={revealImage.alt}
+                style={{
+                    x: imagePos.x,
+                    y: imagePos.y,
+                    opacity: revealImage.opacity,
+                }}
+            />
         </section>
     )
 }

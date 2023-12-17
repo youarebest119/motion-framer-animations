@@ -26,7 +26,6 @@ import TeamSectionSlider from './components/pages/TeamSectionSlider/TeamSectionS
 import TextAnimations from './components/pages/TextAnimations/TextAnimations';
 import WelcomePage from './components/pages/WelcomePage/WelcomePage';
 import { ROUTES } from './utils/constants';
-import Parallax from "./components/pages/Parallax/Parallax";
 
 const Application = () => {
     const router = createBrowserRouter([
@@ -178,10 +177,6 @@ const Application = () => {
                     path: ROUTES.COUNTER_ANIMATION,
                     element: <CounterAnimation />,
                 },
-                {
-                    path: ROUTES.PARALLAX,
-                    element: <Parallax />,
-                }
             ],
         },
     ]);
