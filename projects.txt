@@ -1,0 +1,59 @@
+project 
+
+website entry - https://nova-speaker.webflow.io/
+                https://www.bloobies.art/
+                https://axo.mt/
+                https://www.timetorefokus.com/
+                https://showcase.studiothis.co.uk/glo/
+
+sections - 
+https://nova-speaker.webflow.io/ => XYZ Big text section image effect
+https://www.bloobies.art/        => GOOLLERY section
+https://www.neurable.io/         => banner background size small on scroll
+                                 => "Making Technology Universally Accessible" section image becomes big as we scroll down
+                                 => "Keep Burnout at Bay" one side pin other side scroll
+                                 => "MW75 Neuro" section background becomes big as we scroll
+https://www.timetorefokus.com/   => "Watch Hype video" section 
+https://www.eci.io/              => "AI for All" section 
+https://findyourvana.com/        => journey section
+norefrence => while scrolling , one by one card comes to top  , card will be like this - - - -. first card comes up, then second, then others'
+animate                          => open list animation
+                                 => reveal images
+                                 => split vegletta
+                                 => mask cursor
+                                 => framer modal
+                                 => make progress on view
+                                 => team section
+norefrence => footer comes from bottom and covers the last section
+
+Scroll progress
+https://thepublicdiagnosis.thebraincancercentre.org.au/ => left sidebar scroll progress
+
+
+Text effects - 
+https://jstimler.co.uk/          => "about us" text 
+https://www.bloobies.art/        => section headings
+https://findyourvana.com/        => benefits section text
+animate                          => text animations
+
+sidebar designs -
+https://www.festival-presquile.fr/
+https://www.darina-cg.com/
+https://www.blueriveraviation.com/
+https://showcase.studiothis.co.uk/glo/
+
+Button effects - 
+https://www.xfive.co/            => All cases button effect
+https://jstimler.co.uk/          => "Contact us" section
+
+cursor effects - 
+https://www.bloobies.art/ - custom cursor
+
+
+smooth scrolling
+https://www.bloobies.art/ - same as in this website
+
+
+
+footer
+https://nova-speaker.webflow.io/ => NOVA big text animation

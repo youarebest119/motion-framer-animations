@@ -17,6 +17,7 @@ import MakeProgressWhenInView from './components/pages/MakeProgressWhenInView/Ma
 import MaskCursor from './components/pages/MaskCursor/MaskCursor';
 import OnScrollZoom from './components/pages/OnScrollZoom/OnScrollZoom';
 import OpenListAnimation from './components/pages/OpenListAnimation/OpenListAnimation';
+import ReactSelect from "./components/pages/ReactSelect/ReactSelect";
 import RevealTextonView from './components/pages/RevealTextonView/RevealTextonView';
 import Roadmap from './components/pages/Roadmap/Roadmap';
 import ScrollProgress from './components/pages/ScrollProgress/ScrollProgress';
@@ -176,6 +177,10 @@ const Application = () => {
                 {
                     path: ROUTES.COUNTER_ANIMATION,
                     element: <CounterAnimation />,
+                },
+                {
+                    path: ROUTES.REACT_SELECT,
+                    element: <ReactSelect />,
                 },
             ],
         },
