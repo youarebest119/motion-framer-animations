@@ -22,4 +22,5 @@ export const ROUTES = {
     COUNTER_ANIMATION: "/counter-animation",
     BANNER_TEXT_ANIMATION: "/banner-text-animation",
     ANIMATED_TABS: "/animated-tabs",
+    REACT_SELECT: "/react-select",
 }
