@@ -9,7 +9,9 @@ const RevealTextonView = () => {
             <Container>
                 {
                     [1, 2, 3, 4].map(item => (
-                        <RevealTextonViewText />
+                        <React.Fragment key={item}>
+                            <RevealTextonViewText key={item} />
+                        </React.Fragment>
                     ))
                 }
             </Container>
