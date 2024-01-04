@@ -8,7 +8,7 @@ const OnScrollRotate3dTextElement = ({ children }) => {
         target: ref,
     })
 
-    const rotateX = useTransform(scrollYProgress, [0, 1], ["0deg", "-100deg"])
+    const rotateX = useTransform(scrollYProgress, [0.5, 1], ["0deg", "-100deg"])
     return (
         <>
             <motion.div

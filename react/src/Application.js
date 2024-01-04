@@ -28,6 +28,7 @@ import TeamSectionSlider from './components/pages/TeamSectionSlider/TeamSectionS
 import TextAnimations from './components/pages/TextAnimations/TextAnimations';
 import WelcomePage from './components/pages/WelcomePage/WelcomePage';
 import { ROUTES } from './utils/constants';
+import Sidebar from "./components/pages/Sidebar/Sidebar";
 
 const Application = () => {
     const router = createBrowserRouter([
@@ -186,6 +187,10 @@ const Application = () => {
                 {
                     path: ROUTES.SCROLL,
                     element: <Scroll />,
+                },
+                {
+                    path: ROUTES.SIDEBAR,
+                    element: <Sidebar />,
                 },
             ],
         },

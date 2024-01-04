@@ -13,7 +13,6 @@ const OnScrollRotate3dText = () => {
                 <OnScrollRotate3dTextElement>Best Developers</OnScrollRotate3dTextElement>
             </section>
             <div style={{ height: '50vh', backgroundColor: "#514747" }} />
-            <div style={{ height: '50vh', backgroundColor: "#514747" }} />
             <section className={styles.rotate_text}>
                 <OnViewRotate3dTextElement>Our Services</OnViewRotate3dTextElement>
                 <OnViewRotate3dTextElement>Are from World's</OnViewRotate3dTextElement>

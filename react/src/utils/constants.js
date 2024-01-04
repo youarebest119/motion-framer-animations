@@ -24,4 +24,5 @@ export const ROUTES = {
     ANIMATED_TABS: "/animated-tabs",
     REACT_SELECT: "/react-select",
     SCROLL: "/scroll",
+    SIDEBAR: "/sidebar"
 }

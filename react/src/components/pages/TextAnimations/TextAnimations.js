@@ -3,6 +3,7 @@ import OnScrollRotate3dText from './OnScrollRotate3dText/OnScrollRotate3dText';
 import FadeUpText from './FadeUpText/FadeUpText';
 import TextScrollWithScroller from "./TextScrollWithScroller/TextScrollWithScroller"
 import AnimatedNumbers from './AnimatedNumbers/AnimatedNumbers';
+import ZoomOut from './ZoomOut/ZoomOut';
 
 const TextAnimations = () => {
     return (
@@ -15,9 +16,10 @@ const TextAnimations = () => {
                 </h3>
             </section>
             <TextScrollWithScroller />
-            <div style={{ height: '150vh', }} />
+            <div style={{ height: '50vh', }} />
             <OnScrollRotate3dText />
             <AnimatedNumbers />
+            <ZoomOut />
         </>
     )
 }

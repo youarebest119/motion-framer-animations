@@ -1,0 +1,16 @@
+@import "../../../../assets/theme/_var.scss";
+
+.animation {
+    min-height: 400vh;
+
+    .in {
+        position: sticky;
+        top: 0;
+
+        .row {
+            display: flex;
+
+        }
+    }
+
+}
