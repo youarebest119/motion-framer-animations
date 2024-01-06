@@ -9,7 +9,7 @@ import WriteAnimation from './WriteAnimation/WriteAnimation';
 const TextAnimations = () => {
     return (
         <>
-            {/* <section>
+            <section>
                 <h3>
                     <FadeUpText>
                         This Text have fading up animation
@@ -20,8 +20,9 @@ const TextAnimations = () => {
             <div style={{ height: '50vh', }} />
             <OnScrollRotate3dText />
             <AnimatedNumbers />
-            <ZoomOut /> */}
+            <ZoomOut />
             <WriteAnimation />
+            <div style={{ height: '50vh', }} />
         </>
     )
 }
