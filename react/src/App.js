@@ -4,7 +4,7 @@ import Application from './Application';
 import Cursor from './components/common/Cursor/Cursor';
 import { motion } from "framer-motion";
 function App() {
-	const [active, setActive] = useState(true);
+	const [active, setActive] = useState(false);
 	useEffect(() => {
 		const lenis = new Lenis();
 		function raf(time) {

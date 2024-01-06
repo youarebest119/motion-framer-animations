@@ -9,12 +9,12 @@ website entry - https://nova-speaker.webflow.io/
 sections - 
 https://nova-speaker.webflow.io/ => XYZ Big text section image effect
 https://www.bloobies.art/        => GOOLLERY section
-https://www.neurable.io/         => banner background size small on scroll
-                                 => "Making Technology Universally Accessible" section image becomes big as we scroll down
+DONE - https://www.neurable.io/         => banner background size small on scroll
+                                 =>DONE -  "Making Technology Universally Accessible" section image becomes big as we scroll down
                                  => "Keep Burnout at Bay" one side pin other side scroll
                                  => "MW75 Neuro" section background becomes big as we scroll
 https://www.timetorefokus.com/   => "Watch Hype video" section 
-https://www.eci.io/              => "AI for All" section 
+DONE - https://www.eci.io/              => "AI for All" section 
 https://findyourvana.com/        => journey section
 norefrence => while scrolling , one by one card comes to top  , card will be like this - - - -. first card comes up, then second, then others'
 animate                          => open list animation

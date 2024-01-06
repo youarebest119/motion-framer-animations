@@ -20,6 +20,7 @@ import OpenListAnimation from './components/pages/OpenListAnimation/OpenListAnim
 import ReactSelect from "./components/pages/ReactSelect/ReactSelect";
 import RevealTextonView from './components/pages/RevealTextonView/RevealTextonView';
 import Roadmap from './components/pages/Roadmap/Roadmap';
+import Scroll from "./components/pages/Scroll/Scroll";
 import ScrollProgress from './components/pages/ScrollProgress/ScrollProgress';
 import ScrollTextWithScrolling from './components/pages/ScrollTextWithScrolling/ScrollTextWithScrolling';
 import SplitVigletta from './components/pages/SplitVigletta/SplitVigletta';
@@ -27,6 +28,7 @@ import TeamSectionSlider from './components/pages/TeamSectionSlider/TeamSectionS
 import TextAnimations from './components/pages/TextAnimations/TextAnimations';
 import WelcomePage from './components/pages/WelcomePage/WelcomePage';
 import { ROUTES } from './utils/constants';
+import Sidebar from "./components/pages/Sidebar/Sidebar";
 
 const Application = () => {
     const router = createBrowserRouter([
@@ -181,6 +183,14 @@ const Application = () => {
                 {
                     path: ROUTES.REACT_SELECT,
                     element: <ReactSelect />,
+                },
+                {
+                    path: ROUTES.SCROLL,
+                    element: <Scroll />,
+                },
+                {
+                    path: ROUTES.SIDEBAR,
+                    element: <Sidebar />,
                 },
             ],
         },

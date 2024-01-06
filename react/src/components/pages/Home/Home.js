@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "./Home.module.scss";
 import { ROUTES } from '../../../utils/constants'
 import { NavLink } from 'react-router-dom'
@@ -6,9 +6,11 @@ import { Container } from "react-bootstrap"
 import { motion, useIsPresent } from "framer-motion";
 const Home = () => {
     const isPresent = useIsPresent();
+    const [search, setSearch] = useState("");
     return (
         <div className={styles.home}>
             <Container>
+                <input value={search} onChange={e => setSearch(e.target.value)} className={styles.input} placeholder='Search' />
                 <ul>
                     {
                         Object.keys(ROUTES).map(item => {
