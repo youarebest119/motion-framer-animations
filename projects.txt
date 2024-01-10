@@ -5,7 +5,9 @@ website entry - https://nova-speaker.webflow.io/
                 https://axo.mt/
                 https://www.timetorefokus.com/
                 https://showcase.studiothis.co.uk/glo/
-
+		https://dribbble.com/shots/14005714-Handwriting-Text-Animation-Trim-Path-After-Effects
+                abstraction project entry
+		
 sections - 
 https://nova-speaker.webflow.io/ => XYZ Big text section image effect
 https://www.bloobies.art/        => GOOLLERY section
