@@ -26,4 +26,5 @@ export const ROUTES = {
     SCROLL: "/scroll",
     SIDEBAR: "/sidebar",
     PARALLAX: "/parallax",
+    CARDS: "/cards",
 }

@@ -1,9 +1,23 @@
-import { useInView } from "framer-motion";
-import React, { useRef } from 'react';
-import styles from "./WriteAnimation.module.scss";
 
-import Element from './Element';
-let text = [
+export function getCoords(elem) { // crossbrowser version
+    var box = elem.getBoundingClientRect();
+
+    var body = document.body;
+    var docEl = document.documentElement;
+
+    var scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
+    var scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft;
+
+    var clientTop = docEl.clientTop || body.clientTop || 0;
+    var clientLeft = docEl.clientLeft || body.clientLeft || 0;
+
+    var top = box.top + scrollTop - clientTop;
+    var left = box.left + scrollLeft - clientLeft;
+
+    return { top: Math.round(top), left: Math.round(left) };
+}
+
+export const text = [
     {
         letter: "c",
         color: "#d73a49",
@@ -25,7 +39,7 @@ let text = [
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
@@ -61,7 +75,7 @@ let text = [
         color: "#005cc5",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#005cc5",
     },
     {
@@ -69,7 +83,7 @@ let text = [
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
@@ -85,7 +99,7 @@ let text = [
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
@@ -249,15 +263,15 @@ let text = [
         color: "#24292e",
     },
     {
-        letter: <br />,
+        letter: "\n",
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#24292e",
     },
     {
@@ -305,7 +319,7 @@ let text = [
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
@@ -317,23 +331,23 @@ let text = [
         color: "#d73a49",
     },
     {
-        letter: <br />,
+        letter: "\n",
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
@@ -349,7 +363,7 @@ let text = [
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
@@ -461,31 +475,31 @@ let text = [
         color: "#24292e",
     },
     {
-        letter: <br />,
+        letter: "\n",
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
@@ -557,31 +571,31 @@ let text = [
         color: "#24292e",
     },
     {
-        letter: <br />,
+        letter: "\n",
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#24292e",
     },
     {
@@ -625,23 +639,23 @@ let text = [
         color: "#24292e",
     },
     {
-        letter: <br />,
+        letter: "\n",
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#24292e",
     },
     {
@@ -653,7 +667,7 @@ let text = [
         color: "#24292e",
     },
     {
-        letter: <br />,
+        letter: "\n",
         color: "#24292e",
     },
     {
@@ -665,7 +679,11 @@ let text = [
         color: "#24292e",
     },
     {
-        letter: <br />,
+        letter: "\n",
+        color: "#24292e",
+    },
+    {
+        letter: "\n",
         color: "#24292e",
     },
     {
@@ -689,7 +707,7 @@ let text = [
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
@@ -697,7 +715,7 @@ let text = [
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#24292e",
     },
     {
@@ -717,7 +735,7 @@ let text = [
         color: "#005cc5",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#005cc5",
     },
     {
@@ -725,7 +743,7 @@ let text = [
         color: "#24292e",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
@@ -733,7 +751,7 @@ let text = [
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
@@ -757,7 +775,7 @@ let text = [
         color: "#d73a49",
     },
     {
-        letter: "&nbsp;",
+        letter: " ",
         color: "#d73a49",
     },
     {
@@ -885,32 +903,3 @@ let text = [
         color: "#24292e",
     },
 ];
-
-const WriteAnimation = () => {
-    const ref = useRef();
-    const isInView = useInView(ref);
-
-    return (
-        <>
-            <div ref={ref} className={styles.animation}>
-                <div className={styles.tabs}>
-                    <div className={styles.nav}>
-                        <button>
-                            getStarted.ts
-                        </button>
-                    </div>
-                    <div className={styles.content}>
-                        <h3>typescript</h3>
-                        <Element
-                            text={isInView ? text : []}
-                            speed={20}
-                            elementType="div"
-                        />
-                    </div>
-                </div>
-            </div>
-        </>
-    )
-}
-
-export default WriteAnimation
