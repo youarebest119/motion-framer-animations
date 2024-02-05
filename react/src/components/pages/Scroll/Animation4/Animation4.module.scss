@@ -1,16 +1,27 @@
 @import "../../../../assets/theme/_var.scss";
 
 .animation {
-    min-height: 400vh;
+    ul {
+        overflow: hidden;
+        display: flex;
 
-    .in {
-        position: sticky;
-        top: 0;
+        li {
+            width: 33.3333333333333%;
+            padding: 20px;
 
-        .row {
-            display: flex;
+            .box {
+                background-color: white;
+                border-radius: 20px;
+                overflow: hidden;
+                width: 100%;
 
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
         }
     }
-
 }

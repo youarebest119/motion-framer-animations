@@ -7,7 +7,6 @@ const TeamMember = ({ item, index }) => {
     const isInView = useInView(ref)
     return (
         <>
-
             <div
                 ref={ref}
                 className={styles.member}
@@ -40,7 +39,6 @@ const TeamMember = ({ item, index }) => {
                     <p>{item.designation}</p>
                 </motion.div>
             </div>
-
         </>
     )
 }
