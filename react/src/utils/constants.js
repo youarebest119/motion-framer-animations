@@ -27,4 +27,5 @@ export const ROUTES = {
     SIDEBAR: "/sidebar",
     PARALLAX: "/parallax",
     CARDS: "/cards",
+    SVG: "/svg",
 }

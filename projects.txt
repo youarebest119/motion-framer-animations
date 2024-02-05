@@ -59,3 +59,8 @@ https://www.bloobies.art/ - same as in this website
 
 footer
 https://nova-speaker.webflow.io/ => NOVA big text animation
+
+
+
+change theme effect
+https://shapefarm.net/

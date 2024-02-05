@@ -31,6 +31,7 @@ import { ROUTES } from './utils/constants';
 import Sidebar from "./components/pages/Sidebar/Sidebar";
 import Parallax from "./components/pages/Parallax/Parallax";
 import Cards from "./components/pages/Cards/Cards";
+import Svg from "./components/pages/Svg/Svg";
 
 const Application = () => {
     const router = createBrowserRouter([
@@ -201,6 +202,10 @@ const Application = () => {
                 {
                     path: ROUTES.CARDS,
                     element: <Cards />,
+                },
+                {
+                    path: ROUTES.SVG,
+                    element: <Svg />,
                 },
             ],
         },
