@@ -1,0 +1,25 @@
+$themes: (
+    light-theme: ("whiteclr": #ffffff,
+        "blackclr": rgba(60, 60, 67),
+    ),
+    dark-theme: ("whiteclr": #000,
+        "blackclr": white,
+    ),
+);
+
+/* ===== theme ===== */
+@mixin theme() {
+    @each $theme, $map in $themes {
+        $theme-map: $map !global;
+
+        .#{$theme} & {
+            @content;
+        }
+    }
+
+    $theme-map: null !global;
+}
+
+@function theme-get($key) {
+    @return map-get($theme-map, $key);
+}
