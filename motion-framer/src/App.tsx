@@ -1,7 +1,7 @@
-import { useEffect } from "react";
-import Application from "./Application";
-import { Toaster } from "react-hot-toast";
 import Lenis from "@studio-freight/lenis";
+import { useEffect } from "react";
+import { Toaster } from "react-hot-toast";
+import Application from "./Application";
 
 function App() {
   useEffect(() => {
