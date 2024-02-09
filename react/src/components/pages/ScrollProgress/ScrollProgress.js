@@ -28,18 +28,19 @@ const ScrollProgress = () => {
                 </motion.div>
             </div>
             <div className={styles.circular_progress}>
-                <svg id="progress" width="100" height="100" viewBox="0 0 100 100">
-                    <circle cx="50" cy="50" r="30" className={styles.indicator_bg} />
+                [        <svg id="progress" width="100" height="100" viewBox="0 0 100 100">
+                    <circle strokeDasharray={0} strokeWidth={"15%"} fill="none" cx="50" cy="50" r="30" stroke='rgb(255, 136, 0)' opacity={0.3} />
                     <motion.circle
                         cx="50"
                         cy="50"
+                        strokeDasharray={0} strokeWidth={"15%"} fill="none"
+                        stroke={"rgb(255, 136, 0)"}
                         r="30"
-                        className={styles.indicator}
                         style={{
-                            pathLength: scrollYProgress,
+                            pathLength: 0.1,
                         }}
                     />
-                </svg>
+                </svg>]
             </div>
         </div>
     )
